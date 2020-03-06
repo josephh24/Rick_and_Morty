@@ -38,7 +38,7 @@
             app:bt_colorInactive="@color/colorNav_inactivo"
             app:bt_icon="@drawable/ic_like"
             app:bt_shape="@drawable/transition_background_drawable"
-            app:bt_title="@string/localizaciones"
+            app:bt_title="@string/favoritos"
             app:bt_iconHeight="@dimen/margin28"
             app:bt_iconWidth="@dimen/margin28"/>
 
