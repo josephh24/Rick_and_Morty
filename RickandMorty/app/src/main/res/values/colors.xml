@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary_ligth">#2A3A34</color>
+    <color name="colorPrimaryDark_ligth">#132421</color>
+    <color name="colorAccent_ligth">#009688</color>
+    <color name="backgroundcolor_ligth">#FCFCFC</color>
+    <color name="cardbackground_ligth">#FFFFFF</color>
+    <color name="textcolor_ligth">#616161</color>
+    <color name="tintcolor_ligth">#000000</color>
+    <color name="buttoncolor_ligth">#009688</color>
+
+    <color name="colorPrimary">#2A3A34</color>
+    <color name="colorPrimaryDark">#132421</color>
+    <color name="colorAccent">#009688</color>
+    <color name="backgroundcolor">#303030</color>
+    <color name="cardbackground">#424242</color>
+    <color name="textcolor">#FFFFFF</color>
+    <color name="tintcolor">#FFFFFF</color>
+    <color name="buttoncolor">#009688</color>
+
+    <color name="colorNav_activo">#009688</color>
+    <color name="colorNav_inactivo">#4db6ac</color>
+    <color name="colorNav_claro">#e0f2f1</color>
+    <color name="colorBlanco">#ffffff</color>
+    <color name="colorAnim1">#4db6ac</color>
+
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/backgroundcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/head_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/acerca_de"
+                        android:textColor="@color/colorNav_claro"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin8"
+                    android:layout_marginRight="@dimen/margin8"
+                    android:elevation="@dimen/margin2"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    app:cardCornerRadius="@dimen/margin8"
+                    app:cardElevation="@dimen/margin2"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin4">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin60"
+                            android:layout_height="@dimen/margin60"
+                            android:padding="@dimen/margin8"
+                            android:src="@drawable/ic_rick"
+                            android:tint="?attr/tintcolor"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <Switch
+                                android:id="@+id/myswitch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin16"
+                                android:buttonTint="?attr/tintcolor"
+                                android:text="@string/config_dark_tema"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin16"
+                                android:text="@string/config_dark_tema_txt"
+                                android:textColor="?attr/textcolor"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ir_linkedin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin8"
+                    android:layout_marginRight="@dimen/margin8"
+                    android:elevation="@dimen/margin2"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="?attr/cardbackground"
+                    app:cardCornerRadius="@dimen/margin8"
+                    app:cardElevation="@dimen/margin2"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/margin8">
+
+                        <ImageView
+                            android:layout_width="@dimen/margin40"
+                            android:layout_height="@dimen/margin40"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:padding="@dimen/margin4"
+                            android:src="@drawable/ic_linkedin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin8"
+                            android:text="@string/linkedin"
+                            android:textColor="?attr/textcolor"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/creditos_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin8"
+                    android:layout_marginStart="@dimen/margin16"
+                    android:layout_marginEnd="@dimen/margin16"
+                    android:layout_marginTop="@dimen/margin8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/creditos"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="?attr/textcolor"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img"
+                    android:padding="@dimen/margin8"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

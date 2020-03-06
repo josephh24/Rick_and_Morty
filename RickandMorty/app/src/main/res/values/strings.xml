@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">RickandMorty</string>
+
+    <string name="app_base">https://rickandmortyapi.com/api/</string>
+
+    <string name="filtros">Filtros de busqueda</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="personajes">Personajes</string>
+    <string name="localizaciones">Ubicación</string>
+    <string name="episodios">Episodios</string>
+    <string name="acerca_de">Menú</string>
+    <string name="id">Id:</string>
+    <string name="creado">Creado:</string>
+    <string name="status">Status</string>
+    <string name="especie">Especie</string>
+    <string name="genero">Genero</string>
+    <string name="origen">Origen</string>
+    <string name="ubicacion_actual">Ultima\nlocalizacion</string>
+    <string name="config_dark_tema">Dark Mode</string>
+    <string name="config_dark_tema_txt">Color general de la aplicación</string>
+    <string name="sin_personajes">No se encontraron resultados</string>
+    <string name="no_wifi">Sin Internet</string>
+    <string name="btn_reintentar">Reintentar</string>
+    <string name="nombre">Nombre:</string>
+    <string name="buscar">Buscar</string>
+    <string name="tipo">Tipo</string>
+    <string name="dimension">Dimension</string>
+    <string name="validacion_formato">Formato incorrecto, solo caracteres: (a-zA-Z)</string>
+    <string name="validacion_correcto">Campo correcto</string>
+    <string name="guardado">Guardado</string>
+    <string name="borrado">Borrado</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="linkedin_url">https://www.linkedin.com/in/jose-sanchez-994b01199</string>
+    <string name="creditos">Hecho por: José Pablo Sánchez Guillén\nPara: Flink</string>
+    <string name="flink_url">https://miflink.com/</string>
+
+</resources>

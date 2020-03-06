@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/fragmentCincoBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/backgroundcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/head_personajes"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimaryDark">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_personajes"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin40"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/margin16"
+                        android:layout_marginEnd="@dimen/margin16"
+                        android:layout_marginTop="@dimen/margin16"
+                        android:layout_marginBottom="@dimen/margin16"
+                        android:animateLayoutChanges="true"
+                        android:background="@drawable/design_search_view"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="buscar"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/btn_filtro_personaje"
+                        android:layout_width="@dimen/margin40"
+                        android:layout_height="@dimen/margin40"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/margin8"
+                        android:background="@drawable/design_btn"
+                        android:padding="@dimen/margin2"
+                        android:src="@drawable/ic_filtro"
+                        android:tint="@color/colorNav_claro" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sin_personajes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:text="@string/sin_personajes"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/textcolor"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/content_no_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/anim_no_wifi_inicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin8"
+                        android:src="@drawable/img_no_internet"/>
+
+                    <TextView
+                        android:id="@+id/txt_no_wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/anim_no_wifi_inicio"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/no_wifi"
+                        android:textColor="@color/colorNav_inactivo"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_reintentar"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_no_wifi"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/margin8"
+                        android:text="@string/btn_reintentar"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorNav_activo"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_personajes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

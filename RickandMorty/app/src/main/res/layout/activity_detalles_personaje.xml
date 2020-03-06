@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".activity.DetallesPersonajeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/head_detalle_personaje"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/volver_detalle_personaje"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin8"
+                android:background="@drawable/design_btn"
+                android:padding="@dimen/margin8"
+                android:src="@drawable/ic_volver"
+                android:tint="@color/colorNav_claro" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/fav_detalle_personaje"
+                android:layout_width="@dimen/margin40"
+                android:layout_height="@dimen/margin40"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/margin8"
+                android:background="@drawable/design_btn"
+                android:padding="@dimen/margin8"
+                android:src="@drawable/ic_like"
+                android:tint="@color/colorNav_claro" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/margin4"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="?attr/cardbackground"
+            app:cardCornerRadius="@dimen/margin8"
+            app:cardElevation="@dimen/margin8"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@id/head_detalle_personaje">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/cont_img_personaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlanco">
+
+                    <ImageView
+                        android:id="@+id/img_personaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin300" />
+
+                    <View
+                        android:id="@+id/scrim_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin90"
+                        android:layout_gravity="top"
+                        android:background="@drawable/scrim_topdown"
+                        android:fitsSystemWindows="true" />
+
+                    <View
+                        android:id="@+id/scrim_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin160"
+                        android:layout_below="@id/scrim_top"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/margin50"
+                        android:background="@drawable/scrim" />
+
+                    <TextView
+                        android:id="@+id/nombre_personaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/scrim_bottom"
+                        android:layout_margin="@dimen/margin8"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/id"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/id_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/id"
+                        android:layout_marginStart="@dimen/margin8"
+                        android:layout_marginEnd="@dimen/margin16"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/creado"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/fecha_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/creado"
+                        android:layout_marginStart="@dimen/margin8"
+                        android:textColor="?attr/textcolor"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/status"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/status_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textColor="@color/colorNav_inactivo"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/textcolor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/especie"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/especie_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/especie"
+                        android:textColor="@color/colorNav_inactivo"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/textcolor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/genero"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/genero_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/genero"
+                        android:textColor="@color/colorNav_inactivo"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/textcolor"/>
+
+                <LinearLayout
+                    android:id="@+id/ver_origen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin8"
+                    android:background="@drawable/design_btn_detalle">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/origen"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/origen_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/origen"
+                        android:textColor="@color/colorNav_inactivo"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/textcolor"/>
+
+                <LinearLayout
+                    android:id="@+id/ver_ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin8"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin8"
+                    android:background="@drawable/design_btn_detalle">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ubicacion_actual"
+                        android:textColor="?attr/textcolor"/>
+
+                    <TextView
+                        android:id="@+id/ubicacion_actual_personaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ubicacion_actual"
+                        android:textColor="@color/colorNav_inactivo"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

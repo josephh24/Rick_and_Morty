@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin4"
+        app:cardBackgroundColor="?attr/cardbackground"
+        app:cardCornerRadius="@dimen/margin8"
+        app:cardElevation="@dimen/margin8"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/content_head"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:padding="@dimen/margin4"
+                    android:layout_margin="@dimen/margin16"
+                    android:background="@drawable/design_btn"
+                    android:src="@drawable/ic_localiza"
+                    android:tint="@color/colorNav_claro"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:text="@string/localizaciones"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/alert_cancel_ubicacion"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/design_btn"
+                    android:padding="@dimen/margin4"
+                    android:src="@drawable/ic_cancel" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginBottom="@dimen/margin8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id"
+                    android:textColor="?attr/textcolor"/>
+
+                <TextView
+                    android:id="@+id/id_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/id"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:layout_marginEnd="@dimen/margin16"
+                    android:textColor="?attr/textcolor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creado"
+                    android:textColor="?attr/textcolor"/>
+
+                <TextView
+                    android:id="@+id/fecha_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creado"
+                    android:layout_marginStart="@dimen/margin8"
+                    android:textColor="?attr/textcolor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginBottom="@dimen/margin8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nombre"
+                    android:textColor="?attr/textcolor"/>
+
+                <TextView
+                    android:id="@+id/nombre_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre"
+                    android:textColor="@color/colorNav_inactivo"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/textcolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginBottom="@dimen/margin8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tipo"
+                    android:textColor="?attr/textcolor"/>
+
+                <TextView
+                    android:id="@+id/tipo_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipo"
+                    android:textColor="@color/colorNav_inactivo"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/textcolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginBottom="@dimen/margin8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dimension"
+                    android:textColor="?attr/textcolor"/>
+
+                <TextView
+                    android:id="@+id/dimension_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dimension"
+                    android:textColor="@color/colorNav_inactivo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

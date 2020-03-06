@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin4"
+        app:cardBackgroundColor="?attr/cardbackground"
+        app:cardCornerRadius="@dimen/margin8"
+        app:cardElevation="@dimen/margin8"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/content_head"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:padding="@dimen/margin4"
+                    android:layout_margin="@dimen/margin16"
+                    android:background="@drawable/design_btn"
+                    android:src="@drawable/ic_filtro"
+                    android:tint="@color/colorNav_claro"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filtros"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/alert_cancel_filtro_personaje"
+                    android:layout_width="@dimen/margin50"
+                    android:layout_height="@dimen/margin50"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/margin4"
+                    android:layout_margin="@dimen/margin16"
+                    android:background="@drawable/design_btn"
+                    android:src="@drawable/ic_cancel" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_filtro_personajes_alert"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin16">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cont_et_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin16"
+                    android:layout_marginEnd="@dimen/margin16"
+                    android:hint="@string/nombre"
+                    android:textColorHint="@color/colorNav_claro"
+                    android:background="@color/colorPrimaryDark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_correo_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorNav_claro" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/nice_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/cont_et_nombre"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:textSize="18sp"
+                    android:layout_marginStart="@dimen/margin16"
+                    android:layout_marginEnd="@dimen/margin16"
+                    app:arrowTint="@color/colorNav_claro"
+                    app:backgroundSelector="@color/colorPrimaryDark"
+                    app:popupTextAlignment="center"
+                    app:textTint="@color/colorNav_claro" />
+
+                <Button
+                    android:id="@+id/btn_filtro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nice_spinner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:text="@string/buscar"
+                    android:textColor="@color/colorNav_claro"
+                    android:background="@drawable/design_btn"
+                    android:paddingStart="@dimen/margin16"
+                    android:paddingEnd="@dimen/margin16"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

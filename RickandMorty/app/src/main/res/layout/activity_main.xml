@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="@dimen/margin8"
+        android:paddingTop="@dimen/margin8"
+        android:paddingBottom="@dimen/margin8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/colorNav_activo"
+            app:bt_colorInactive="@color/colorNav_inactivo"
+            app:bt_icon="@drawable/ic_like"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="@string/localizaciones"
+            app:bt_iconHeight="@dimen/margin28"
+            app:bt_iconWidth="@dimen/margin28"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_personaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorNav_activo"
+            app:bt_colorInactive="@color/colorNav_inactivo"
+            app:bt_icon="@drawable/ic_rick"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="@string/personajes"
+            app:bt_iconHeight="@dimen/margin28"
+            app:bt_iconWidth="@dimen/margin28"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/colorNav_activo"
+            app:bt_colorInactive="@color/colorNav_inactivo"
+            app:bt_icon="@drawable/ic_menu"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="@string/acerca_de"
+            app:bt_iconHeight="@dimen/margin28"
+            app:bt_iconWidth="@dimen/margin28"/>
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
